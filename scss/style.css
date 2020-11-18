@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+:root {
+  font-family: "Public Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2em 0;
+  background-color: white;
+  position: relative;
+  z-index: 5;
+}
+
+.landing-bg {
+  width: 100%;
+  background-color: #fafafa;
+  padding: 6em 0;
+  background-image: url("/images/bg-intro-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 145% 68%;
+}
+
+.landing {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing .landing-right {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  text-align: center;
+  position: absolute;
+  top: -45%;
+  right: -15%;
+  z-index: 2;
+}
+
+.landing .landing-left {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.landing .landing-left h1 {
+  color: #2d314d;
+  font-size: 4rem;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.landing .landing-left p {
+  color: #9698a6;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  width: 85%;
+}
+
+.landing .landing-left button {
+  font-size: 1.2rem;
+  border: none;
+  margin-top: 2em;
+  border-radius: 2em;
+  padding: 0.8em 3em;
+  background-image: -webkit-gradient(linear, right top, left top, from(#2bb7da), to(#31d35c));
+  background-image: linear-gradient(to left, #2bb7da, #31d35c);
+  color: white;
+}
+
+.why-easy-bg {
+  background-color: #f3f4f6;
+  width: 100%;
+}
+
+.why-easy {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5em 0;
+}
+
+.why-easy h2 {
+  margin-top: 0;
+  font-size: 2.3rem;
+  color: #2d314d;
+  font-weight: 400;
+}
+
+.why-easy .a {
+  font-size: 1.2rem;
+  width: 60%;
+  line-height: 1.7;
+  color: #9698a6;
+}
+
+.why-easy .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 3em;
+  margin-top: 4em;
+}
+
+.why-easy .cards .card .head {
+  font-size: 1.2rem;
+  color: #2d314d;
+}
+
+.why-easy .cards .card .sub-head {
+  line-height: 1.5;
+  color: #9698a6;
+}
+
+.articles-bg {
+  background-color: #fafafa;
+  padding: 6em 0;
+}
+
+.articles-head {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.articles-head h2 {
+  margin-top: 0;
+  font-size: 2.3rem;
+  color: #2d314d;
+  font-weight: 400;
+}
+
+.articles {
+  width: 80%;
+  margin: 5em auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
+}
+
+.articles-card {
+  background-color: white;
+  padding-bottom: 1em;
+}
+
+.articles-card img {
+  width: 100%;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.articles-card .spacing {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.5em 0;
+}
+
+.articles-card .author {
+  margin-top: 1em;
+  color: #9698a6;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.articles-card .head {
+  color: #2d314d;
+  font-size: 1.3rem;
+}
+
+.articles-card .head:hover {
+  color: #31d35c;
+}
+
+.articles-card .sub-head {
+  color: #9698a6;
+  font-size: 0.95rem;
+}
+
+footer {
+  color: white;
+  background-color: #2d314d;
+  padding: 2em 0;
+}
+
+.footer {
+  width: 80%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.footer .social {
+  margin-top: -2em;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.footer .social img {
+  margin: 0 0.5em;
+}
+
+.footer button {
+  font-size: 1.2rem;
+  border: none;
+  margin-top: 0.5em;
+  border-radius: 2em;
+  padding: 0.8em 3em;
+  background-image: -webkit-gradient(linear, right top, left top, from(#2bb7da), to(#31d35c));
+  background-image: linear-gradient(to left, #2bb7da, #31d35c);
+  color: white;
+}
+
+.footer .logo {
+  margin-top: 2em;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .landing-bg {
+    background-image: url("/images/bg-intro-mobile.svg");
+    background-position: 100% 0%;
+    text-align: center;
+  }
+  .landing {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .landing .landing-right {
+    position: static;
+    margin-top: -7em;
+  }
+  .landing .landing-right img {
+    width: 100%;
+  }
+  .landing .landing-left h1 {
+    font-size: 3rem;
+  }
+  .landing .landing-left p {
+    color: #9698a6;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    width: 100%;
+  }
+  .landing .landing-left button {
+    font-size: 1.2rem;
+    border: none;
+    margin-top: 2em;
+    border-radius: 2em;
+    padding: 0.8em 3em;
+    background-image: -webkit-gradient(linear, right top, left top, from(#2bb7da), to(#31d35c));
+    background-image: linear-gradient(to left, #2bb7da, #31d35c);
+    color: white;
+  }
+  .why-easy {
+    text-align: center;
+    width: 90%;
+  }
+  .why-easy h2 {
+    font-size: 2.3rem;
+  }
+  .why-easy .a {
+    font-size: 1.1rem;
+    width: 100%;
+  }
+  .why-easy .cards {
+    display: block;
+    margin-top: 4em;
+  }
+  .why-easy .cards .card {
+    margin-bottom: 2em;
+  }
+  .articles-bg {
+    background-color: #fafafa;
+    padding: 6em 0 1em;
+  }
+  .articles-head {
+    text-align: center;
+    width: 90%;
+  }
+  .articles {
+    width: 90%;
+    display: block;
+  }
+  .articles-card {
+    margin-bottom: 2em;
+  }
+  footer {
+    color: white;
+    background-color: #2d314d;
+    padding: 2em 0;
+  }
+  .footer {
+    text-align: center;
+    width: 90%;
+    display: block;
+  }
+  .footer .social {
+    margin-top: 0em;
+  }
+  .footer .logo {
+    margin-top: 0em;
+    margin-bottom: 1em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
