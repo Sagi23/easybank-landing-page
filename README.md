@@ -1,5 +1,5 @@
 # easybank-landing-page
-### Description
+### Description:
 
 Bank landing page.  
 The site is responsive to all devices.
